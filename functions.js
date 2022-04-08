@@ -9,11 +9,19 @@ const container = document.createElement('div');
 container.className = 'container';
 document.body.appendChild(container);
 
+//create button to clear current Grid 
+
+const clearButton = document.createElement('button');
+clearButton.className = 'clear-button';
+clearButton.textContent = 'Clear';
+clearButton.addEventListener('click', resetColors);
+container.appendChild(clearButton);
+
+
 //create content with dom 
 const content = document.createElement('div');
 content.className = 'content';
 container.appendChild(content);
-
 
 function createGrid(size) {
 
@@ -52,4 +60,11 @@ function colorSquare() {
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
+  }
+
+  function resetColors() {
+      let divs = document.getElementsByClassName('next-div');
+        for (let i = 0; i < divs.length; i++) {
+            divs[i].style.backgroundColor = 'whitesmoke';
+        }
   }
