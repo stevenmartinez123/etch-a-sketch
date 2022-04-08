@@ -44,5 +44,12 @@ function changeSize(size) {
 }
 
 function colorSquare() {
-    this.style.backgroundColor = 'black';
+    let red = getRandomInt(256); 
+    let green = getRandomInt(256); 
+    let blue = getRandomInt(256); 
+    this.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`; 
 }
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
