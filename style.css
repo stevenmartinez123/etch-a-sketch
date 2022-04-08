@@ -1,0 +1,40 @@
+.header {
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 48px;
+    padding: 10px;
+    border: 4px solid white;
+    margin: 0;
+}
+
+.container {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 2px solid black;
+}
+
+.next-div {
+    border: 1px solid black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
