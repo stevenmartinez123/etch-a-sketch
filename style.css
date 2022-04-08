@@ -20,6 +20,7 @@
     height: 550px;
     display: grid;
     border: 2px solid black;
+    margin-bottom: 2em;
 }
 
 .next-div {
