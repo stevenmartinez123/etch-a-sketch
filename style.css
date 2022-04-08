@@ -12,23 +12,18 @@
 
 .container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .content {
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
     display: grid;
     border: 2px solid black;
-    align-self: center;
 }
 
 .next-div {
-    border: 1px solid black;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   border: 1px solid black;
     margin: 0; 
     padding: 0;
     background-color: whitesmoke;
@@ -40,12 +35,20 @@ body {
     background-color: teal;
 }
 
-.clear-button {
+button {
     width: 100px;
     padding: 0;
     margin-top: 3em;
     margin-bottom: 3em;
-    align-self: center;
     border: 2px solid black;
     border-radius: 4px;
+    padding: 5px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
